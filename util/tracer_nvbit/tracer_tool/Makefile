@@ -8,7 +8,7 @@ ifeq ($(NVCC_VER_CHECK),0)
 $(error ERROR: nvcc version >= $(NVCC_VER_REQ) required to compile an nvbit tool! Instrumented applications can still use lower versions of nvcc.)
 endif
 
-NVBIT_PATH=../nvbit_release/core
+NVBIT_PATH=../../../nvbit_release/core
 INCLUDES=-I$(NVBIT_PATH)
 
 LIBS=-L$(NVBIT_PATH) -lnvbit
